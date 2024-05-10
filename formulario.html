@@ -6,8 +6,8 @@
     <title>formulario 08/05</title>
 </head>
 <body>
-    <div> <h1>Formulário</h1>
-        <p>Informe suas informações</p>
+    <div> <h1>Cadastro do Caixa tem </h1>
+        <p>informe todos os dados necessario, para que o Cadastro seja realizado com sucesso</p>
         <br>
     </div>
     <form>
@@ -26,25 +26,30 @@
             <label>Email</label> <br>
                 <input type="email" name="Email" id="Email">
             </div>
+            <div>
+                <label>CPF</label> <br>
+                <input type="number" name="CPF" id="CPF">
+            </div>
         </fieldset>
         </div>
+        
         <div>
             <label>Qual sua cor?</label>
         </div>
         <label> 
             <input type="radio" name="devweb" value="Branco">Branco</label>
         <label> 
-            <input type="radio" name="devweb" value="Preto">Preto</label>
+            <input type="radio" name="devweb" value="Preto">Preto</label> <br>
         <label> 
             <input type="radio" name="devweb" value="Amarelo">Amarelo</label>
         <label> 
-            <input type="radio" name="devweb" value="Indigena">Indigena</label>
+            <input type="radio" name="devweb" value="Indigena">Indigena</label><br>
         <label> 
             <input type="radio" name="devweb" value="Pardo">Pardo</label>
         <label> 
             <input type="radio" name="devweb" value="Outro"checked>Outro:<input type="text" name="Outro" id="Outro">
         </label>
-        <div>
+        <div> <br>
             <label>Senioridade</label>
             <select id="Senioridade"> 
                 <option selected disabled value="selecione">selecione uma das opções</option>
@@ -53,11 +58,31 @@
                 <option value="Senior">Senior</option>
             </select>
         </div>
+        <br>
         <fieldset>
-            <div> <label></label>
+            <div> 
+                <label>Selecione as tecnologias que utiliza:</label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="PHP">
+                <label for="tecnologia3">PHP</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="C#">
+                <label for="tecnologia4">CSS</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Python">
+                <label for="tecnologia5">Python</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Java">
+                <label for="tecnologia6">Java</label>
             </div>
         </fieldset>
-
+        <div>
+            <br>
+                <label for="">Fale um pouco sobre você</label>
+                <textarea name="voce" id="voce" cols="30" rows="1" style="width: 26em;"> </textarea>
+        </div>
+    
+     <br><button type="submit">Concluído</button>
 
     </form>
 </body>
