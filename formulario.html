@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
     <title>formulario 08/05</title>
 </head>
 <body>
-    <div> <h1> Conta do Caixa tem </h1>
-        <h6>Crie sua conta do Caixa Tem</h6>
+    <main>
+    <div> <h1 id="titulo1"> Conta do Caixa tem </h1>
+        <h4>Crie sua conta do Caixa Tem</h4>
         <p>informe todos os dados necessario, para que o Cadastro seja realizado com sucesso</p>
         <br>
     </div>
     <form>
         <fieldset> 
-            <div>
+            <div class="div">
                 <label>Nome</label> <br>
                 <input type="text" name="nome" id="nome">
             </div>
@@ -29,7 +31,7 @@
             </div>
             <div>
                 <label>CPF</label> <br>
-                <input type="number" name="CPF" id="CPF">
+                <input type="text" name="CPF" id="CPF">
             </div>
         </fieldset>
         </div>
@@ -50,6 +52,7 @@
         <label> 
             <input type="radio" name="devweb" value="Outro"checked>Outro:<input type="text" name="Outro" id="Outro">
         </label>
+        
         <div> <br>
             <label>Senioridade</label>
             <select id="Senioridade"> 
@@ -62,29 +65,23 @@
         <br>
         <fieldset>
             <div> 
-                <label>Selecione as tecnologias que utiliza:</label><br><br>
-                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                <label for="tecnologia1">HTML</label>
-                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-                <label for="tecnologia2">CSS</label>
-                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="PHP">
-                <label for="tecnologia3">PHP</label>
-                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="C#">
-                <label for="tecnologia4">CSS</label>
-                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Python">
-                <label for="tecnologia5">Python</label>
-                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Java">
-                <label for="tecnologia6">Java</label>
+                <label>Seria qual tipo de conta:</label><br><br>
+                <input type="checkbox" id="conta1" name="conta1" value="conta1">
+                <label for="tecnologia1">Conta Poupança</label>
+                <input type="checkbox" id="conta2" name="conta2" value="conta2">
+                <label for="tecnologia2">Conta Corrente</label> <br>
+                <label>Valor:</label>
+                <input type="text" name="valor" value=" ">
             </div>
         </fieldset>
         <div>
             <br>
-                <label for="">Fale um pouco sobre você</label>
+                <label for="">Fale um pouco sobre você: </label>
                 <textarea name="voce" id="voce" cols="30" rows="1" style="width: 26em;"> </textarea>
         </div>
-    
-     <br><button type="submit">Concluído</button>
-
-    </form>
+     <br> 
+     <a href="novapagin.html"> <button type="">Concluído</button></a>
+     </form>
+    </main>
 </body>
 </html>
